@@ -10,12 +10,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>This Person</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Source Code : <a href='https://r.mtdv.me/github-direct-telebot-file'>Click here</a>\n○ Channel : @Otaku_Library\n○ Chat Group : @Otaku_Chats\n○ Admin 1 : @Psycho_Gecko\n○ Admin 2 : @Ktgp_3453\n○ Admin 3 : @Otaku_Helper</b>",
+            text = f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>Owner of Bot</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Source Code : <a href='https://r.mtdv.me/github-direct-telebot-file'>Click here</a>\n○ Main Channel : @Otaku_Library\n○ Chat Group : @Otaku_Chats\n○ Admin 1 : @Psycho_Gecko\n○ Admin 2 : @Ktgp_3453\n○ Admin 3 : @Otaku_Helper</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                        InlineKeyboardButton("❌ Close", callback_data = "close")
                     ]
                 ]
             )
